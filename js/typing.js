@@ -77,26 +77,17 @@ class TypingAnimation {
     async startTyping(item) {
         const { element, settings } = item;
         
-        // Clear element content
+        // Clear element content and reset
         element.innerHTML = '';
+        element.textContent = '';
         
-        // Add cursor if enabled
-        if (settings.cursor) {
-            this.addCursor(element, settings.cursorChar);
-        }
-
-        // Type the text
-        await this.typeText(element, settings.text, settings.typeSpeed);
+        // Simple character-by-character typing without cursor complications
+        await this.typeTextSimple(element, settings.text, settings.typeSpeed);
         
         // Handle looping
         if (settings.loop) {
             setTimeout(() => {
                 this.handleLoop(item);
-            }, settings.pauseDuration);
-        } else {
-            // Remove cursor after completion if not looping
-            setTimeout(() => {
-                this.removeCursor(element);
             }, settings.pauseDuration);
         }
 
@@ -122,6 +113,26 @@ class TypingAnimation {
                         element.textContent += char;
                     }
                     
+                    index++;
+                } else {
+                    clearInterval(typeInterval);
+                    resolve();
+                }
+            }, speed);
+        });
+    }
+
+    /**
+     * Simple typing without cursor complications
+     */
+    typeTextSimple(element, text, speed) {
+        return new Promise(resolve => {
+            let index = 0;
+            element.textContent = '';
+            
+            const typeInterval = setInterval(() => {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index);
                     index++;
                 } else {
                     clearInterval(typeInterval);
@@ -491,10 +502,10 @@ if (!document.getElementById('typing-styles')) {
 // Global typing animation instance
 window.typingAnimation = new TypingAnimation();
 
-// Initialize on DOM content loaded
-document.addEventListener('DOMContentLoaded', function() {
-    window.typingAnimation.init();
-});
+// Initialize on DOM content loaded - disabled to prevent conflicts
+// document.addEventListener('DOMContentLoaded', function() {
+//     window.typingAnimation.init();
+// });
 
 // Export classes for use in other modules
 if (typeof module !== 'undefined' && module.exports) {

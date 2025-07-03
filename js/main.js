@@ -83,6 +83,12 @@ function initializeTypingAnimations() {
         const text = element.getAttribute('data-text');
         const delay = parseInt(element.getAttribute('data-delay')) || 0;
         
+        // Skip if already processed
+        if (element.dataset.processed === 'true') {
+            return;
+        }
+        element.dataset.processed = 'true';
+        
         setTimeout(() => {
             typeText(element, text);
         }, delay);
@@ -93,8 +99,16 @@ function initializeTypingAnimations() {
  * Type text animation
  */
 function typeText(element, text) {
+    // Clear any existing content and animations
     element.innerHTML = '';
+    element.textContent = '';
     element.style.borderRight = '2px solid var(--accent-cyan)';
+    
+    // Prevent multiple typing animations on the same element
+    if (element.dataset.typing === 'true') {
+        return;
+    }
+    element.dataset.typing = 'true';
     
     let i = 0;
     const timer = setInterval(() => {
@@ -103,6 +117,7 @@ function typeText(element, text) {
             i++;
         } else {
             clearInterval(timer);
+            element.dataset.typing = 'false';
             // Keep cursor blinking for a while, then remove it
             setTimeout(() => {
                 element.style.borderRight = 'none';
