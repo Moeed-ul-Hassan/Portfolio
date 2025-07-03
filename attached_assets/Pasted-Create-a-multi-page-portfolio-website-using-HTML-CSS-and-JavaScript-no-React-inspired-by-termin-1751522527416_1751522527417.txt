@@ -1,0 +1,66 @@
+Create a multi-page portfolio website using HTML, CSS, and JavaScript (no React), inspired by terminal/code editors, with a futuristic robotic touch. The layout should be unique but similar in feeling to code-based hacker UIs.
+
+🎨 Theme:
+- Dark mode (deep black background)
+- Neon blue and cyan highlights (use gradients subtly)
+- Monospace or futuristic fonts (Orbitron, JetBrains Mono)
+- Glowing hover effects on links, buttons, and borders
+- Add soft background code snippets as watermark (blurred, non-copyable)
+
+🧭 Pages (Each page is separate HTML):
+1. index.html – Landing + Navigation
+2. about.html – About Moeed
+3. skills.html – Skills & Stack
+4. projects.html – Projects Gallery
+5. contact.html – Contact Form
+
+📄 Page Details:
+
+🔹 index.html (Home Page)
+- Hero section with:
+  "Hi, I'm Moeed ul Hassan"
+  "Python Web App Developer | Based in Gujrat, Pakistan"
+- Use typing animation for intro lines
+- Subtle matrix-style code animation in background
+- Button: "Explore My World" → goes to about.html
+- Vertical left-side navbar with icons and page links (glow on hover)
+
+🔹 about.html
+- Styled like a mission briefing panel
+- Bio paragraph:
+  “I’m Moeed, a self-taught developer with 1 year of freelancing experience (no commercial projects completed). I’ve built meaningful apps like Mail Hawk and Food Rescue Network, and now fully focused on job search.”
+- Include a mini timeline of education
+- Islamic values: truth, halal effort, self-discipline
+
+🔹 skills.html
+- Code console style layout
+- Skills listed in vertical "command prompt" format:
+  `$ show skills --full`
+- Example outputs:
+  ▪ Python → ★★★★☆
+  ▪ FastAPI → ★★★★☆
+  ▪ React → ★★☆☆☆ (Learning)
+  ▪ Supabase, Git, Tailwind → ★★★☆☆
+- Add progress bars styled like loading bars
+
+🔹 projects.html
+- Each project shown as a "digital chip card"
+- Section 1: Completed Missions
+  - Mail Hawk, Food Rescue Network, Addictions Blocker
+- Section 2: Abandoned Missions (with faded glitch style)
+  - Task Buddy, Freelance Shield, Talking Mask, PriceGenie
+- Hover on each card → show tools used + short description
+
+🔹 contact.html
+- Terminal-style contact form:
+  `$ send_message --to=Moeed`
+- Name, Email, Message fields styled like input in code editor
+- Send button: "Launch Transmission 🚀"
+- Add Quranic footer line:  
+  “Indeed, Allah is with those who do good.” – Surah Ankaboot 29:69
+
+🔧 Extras:
+- Make everything responsive with media queries
+- Animations must be subtle, like blinking cursors, code scanline effect
+- Avoid direct code copying from other portfolios – make layout original with creative touches (e.g., circular glowing buttons, command line input style forms, split layout sections)
+
