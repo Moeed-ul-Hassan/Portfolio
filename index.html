@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">MH.dev</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloader-progress"></div>
+            </div>
+            <div class="preloader-text" id="preloader-text">Initializing portfolio systems...</div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="floating-elements" id="floating-elements"></div>
+
     <!-- Matrix Background -->
     <canvas id="matrix-canvas"></canvas>
     
@@ -114,6 +128,69 @@ class Portfolio:
             <div class="stat-item">
                 <div class="stat-number">100%</div>
                 <div class="stat-label">Dedication</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Availability</div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="achievements-section">
+            <h2><i class="fas fa-trophy"></i> Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <div class="achievement-title">Full Stack Developer</div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-heart"></i></div>
+                    <div class="achievement-title">Social Impact</div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="achievement-title">Fast Learner</div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="achievement-title">Problem Solver</div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <div class="achievement-title">Team Player</div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="achievement-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="achievement-title">Innovation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Hire Me Section -->
+        <div class="why-hire-section">
+            <h2><i class="fas fa-star"></i> Why Choose Me?</h2>
+            <div class="hire-reasons">
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Quick Delivery</h3>
+                    <p>Fast turnaround times without compromising on quality. I understand the importance of meeting deadlines.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Reliable Partner</h3>
+                    <p>Consistent communication and transparent work process. You'll always know the project status.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Growth Mindset</h3>
+                    <p>Always learning new technologies and improving skills. Your project benefits from latest best practices.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="reason-icon-alt"><i class="fas fa-percentage"></i></div>
+                    <h3>Cost Effective</h3>
+                    <p>High-quality work at competitive rates. Perfect for startups and growing businesses.</p>
+                </div>
             </div>
         </div>
     </main>

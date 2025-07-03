@@ -5,8 +5,53 @@
 
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
-    initializeApp();
+    initializePreloader();
+    setTimeout(() => {
+        initializeApp();
+    }, 500);
 });
+
+/**
+ * Initialize preloader
+ */
+function initializePreloader() {
+    const preloader = document.getElementById('preloader');
+    const progress = document.getElementById('preloader-progress');
+    const text = document.getElementById('preloader-text');
+    
+    if (!preloader) return;
+    
+    const loadingSteps = [
+        'Loading assets...',
+        'Initializing matrix effects...',
+        'Preparing user interface...',
+        'Finalizing experience...',
+        'Welcome to the portfolio!'
+    ];
+    
+    let currentStep = 0;
+    let progressValue = 0;
+    
+    const updateProgress = () => {
+        if (currentStep < loadingSteps.length) {
+            text.textContent = loadingSteps[currentStep];
+            progressValue = ((currentStep + 1) / loadingSteps.length) * 100;
+            progress.style.width = progressValue + '%';
+            currentStep++;
+        } else {
+            clearInterval(progressInterval);
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                createFloatingParticles();
+                initializeScrollProgress();
+                initializeBackToTop();
+                initializeLazyLoading();
+            }, 500);
+        }
+    };
+    
+    const progressInterval = setInterval(updateProgress, 400);
+}
 
 /**
  * Initialize the application
@@ -19,6 +64,7 @@ function initializeApp() {
     initializeProjectModals();
     initializeMobileNavigation();
     initializeScrollEffects();
+    initializePerformanceOptimizations();
 }
 
 /**
@@ -668,3 +714,178 @@ window.matrix = function() {
     canvas.style.opacity = canvas.style.opacity === '0.3' ? '0.1' : '0.3';
     console.log('Matrix effect toggled!');
 };
+
+/**
+ * Create floating particles effect
+ */
+function createFloatingParticles() {
+    const container = document.getElementById('floating-elements');
+    if (!container) return;
+    
+    for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'floating-element';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        container.appendChild(particle);
+    }
+}
+
+/**
+ * Initialize scroll progress indicator
+ */
+function initializeScrollProgress() {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.appendChild(progressBar);
+    
+    window.addEventListener('scroll', () => {
+        const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        progressBar.style.width = scrolled + '%';
+    });
+}
+
+/**
+ * Initialize back to top button
+ */
+function initializeBackToTop() {
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    document.body.appendChild(backToTop);
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+/**
+ * Initialize lazy loading for performance
+ */
+function initializeLazyLoading() {
+    const lazyElements = document.querySelectorAll('.lazy-load');
+    
+    const lazyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('loaded');
+                lazyObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    lazyElements.forEach(el => lazyObserver.observe(el));
+}
+
+/**
+ * Initialize performance optimizations
+ */
+function initializePerformanceOptimizations() {
+    // Initialize enhanced scroll effects
+    initializeEnhancedScrollEffects();
+    
+    // Initialize achievement animations
+    initializeAchievementAnimations();
+    
+    // Initialize keyboard navigation
+    initializeKeyboardNavigation();
+    
+    // Debounce scroll events for better performance
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            // Scroll optimizations
+        }, 10);
+    });
+}
+
+/**
+ * Initialize enhanced scroll effects
+ */
+function initializeEnhancedScrollEffects() {
+    const elements = document.querySelectorAll('.timeline-item, .achievement-badge, .reason-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                entry.target.style.animationDelay = `${Math.random() * 0.5}s`;
+            }
+        });
+    }, { 
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    elements.forEach(el => observer.observe(el));
+}
+
+/**
+ * Initialize achievement animations
+ */
+function initializeAchievementAnimations() {
+    const badges = document.querySelectorAll('.achievement-badge');
+    
+    badges.forEach((badge, index) => {
+        badge.style.animationDelay = `${index * 0.1}s`;
+        
+        badge.addEventListener('mouseenter', () => {
+            badge.style.transform = 'scale(1.05) rotate(2deg)';
+        });
+        
+        badge.addEventListener('mouseleave', () => {
+            badge.style.transform = 'scale(1) rotate(0deg)';
+        });
+    });
+}
+
+/**
+ * Initialize keyboard navigation
+ */
+function initializeKeyboardNavigation() {
+    document.addEventListener('keydown', (e) => {
+        // Enable keyboard navigation
+        if (e.key === 'Tab') {
+            document.body.classList.add('keyboard-nav');
+        }
+        
+        // Quick navigation shortcuts
+        if (e.ctrlKey || e.metaKey) {
+            switch(e.key) {
+                case '1':
+                    e.preventDefault();
+                    window.location.href = 'index.html';
+                    break;
+                case '2':
+                    e.preventDefault();
+                    window.location.href = 'about.html';
+                    break;
+                case '3':
+                    e.preventDefault();
+                    window.location.href = 'skills.html';
+                    break;
+                case '4':
+                    e.preventDefault();
+                    window.location.href = 'projects.html';
+                    break;
+                case '5':
+                    e.preventDefault();
+                    window.location.href = 'contact.html';
+                    break;
+            }
+        }
+    });
+}
