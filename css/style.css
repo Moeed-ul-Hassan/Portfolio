@@ -2219,6 +2219,99 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 8px 25px rgba(100, 255, 218, 0.4);
 }
 
+/* Big Tech Highlight Styling */
+.big-tech-highlight {
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(0, 212, 255, 0.1));
+  border: 2px solid var(--accent-blue);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.big-tech-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.2), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.big-tech-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.company-logo {
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.company-logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: var(--accent-cyan);
+}
+
+/* Enhanced Sections for Big Tech Focus */
+.tech-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tech-skill-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.tech-skill-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.2);
+}
+
+.tech-skill-icon {
+  font-size: 3rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.tech-skill-title {
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tech-skill-level {
+  color: var(--accent-cyan);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 /* Enhanced Mobile Optimizations */
 @media (max-width: 768px) {
   .achievements-grid {
