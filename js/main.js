@@ -99,7 +99,7 @@ function typeText(element, text) {
     let i = 0;
     const timer = setInterval(() => {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
         } else {
             clearInterval(timer);

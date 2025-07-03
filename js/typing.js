@@ -114,12 +114,12 @@ class TypingAnimation {
             const typeInterval = setInterval(() => {
                 if (index < text.length) {
                     const char = text.charAt(index);
-                    const textNode = document.createTextNode(char);
                     
-                    if (cursor) {
+                    if (cursor && cursor.parentNode === element) {
+                        const textNode = document.createTextNode(char);
                         element.insertBefore(textNode, cursor);
                     } else {
-                        element.appendChild(textNode);
+                        element.textContent += char;
                     }
                     
                     index++;

@@ -104,6 +104,16 @@ This is a static portfolio website built with HTML, CSS, and JavaScript featurin
 ```
 Changelog:
 - July 03, 2025. Initial setup
+- July 03, 2025. Enhanced UI with new fonts and improved visual effects:
+  * Changed fonts to Space Grotesk (display) and Fira Code (monospace)
+  * Updated color scheme with modern neon palette (teal/cyan theme)
+  * Added glassmorphism effects with backdrop filters
+  * Enhanced project cards with better hover animations
+  * Fixed typing animation JavaScript errors
+  * Added floating animations and neon pulse effects
+  * Improved button styling with shimmer effects
+  * Enhanced form styling with better focus states
+  * Added comprehensive animation system
 ```
 
 ## User Preferences
