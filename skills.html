@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Moeed ul Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Code Background Watermark -->
+    <div class="code-bg">
+        <pre>
+# Skills Assessment Protocol
+def evaluate_skills():
+    technologies = {
+        'Python': {'level': 4, 'years': 1.5},
+        'FastAPI': {'level': 4, 'years': 1},
+        'JavaScript': {'level': 3, 'years': 1},
+        'React': {'level': 2, 'years': 0.5},
+        'Supabase': {'level': 3, 'years': 0.8},
+        'Git': {'level': 3, 'years': 1},
+        'Tailwind': {'level': 3, 'years': 0.7}
+    }
+    
+    for tech, details in technologies.items():
+        stars = '★' * details['level'] + '☆' * (5 - details['level'])
+        print(f"▪ {tech} → {stars}")
+        
+    return "Skills assessment complete"
+
+evaluate_skills()
+        </pre>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>MH.dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html" class="active"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="projects.html"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1><i class="fas fa-terminal"></i> Skills Console</h1>
+            <p>Technical expertise and proficiency levels</p>
+        </div>
+
+        <div class="console-container">
+            <div class="console-header">
+                <div class="console-buttons">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                </div>
+                <div class="console-title">skills_assessment.sh</div>
+            </div>
+            
+            <div class="console-body">
+                <div class="command-section">
+                    <div class="command-line">
+                        <span class="prompt">moeed@portfolio:~$</span>
+                        <span class="command">show skills --full</span>
+                    </div>
+                </div>
+
+                <div class="skills-output">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-server"></i> Backend Development</h3>
+                        <div class="skill-item" data-skill="python">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">Python</span>
+                                <span class="skill-stars">★★★★☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <div class="skill-description">Core language for backend development, automation, and data processing</div>
+                        </div>
+
+                        <div class="skill-item" data-skill="fastapi">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">FastAPI</span>
+                                <span class="skill-stars">★★★★☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <div class="skill-description">Modern, fast web framework for building APIs with Python</div>
+                        </div>
+
+                        <div class="skill-item" data-skill="supabase">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">Supabase</span>
+                                <span class="skill-stars">★★★☆☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                            <div class="skill-description">Backend as a Service for rapid application development</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-stars">★★★☆☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                            <div class="skill-description">Dynamic web programming and interactive user interfaces</div>
+                        </div>
+
+                        <div class="skill-item" data-skill="react">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">React</span>
+                                <span class="skill-stars">★★☆☆☆ <span class="learning">(Learning)</span></span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="40"></div>
+                            </div>
+                            <div class="skill-description">Component-based frontend library for building user interfaces</div>
+                        </div>
+
+                        <div class="skill-item" data-skill="tailwind">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-stars">★★★☆☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                            <div class="skill-description">Utility-first CSS framework for rapid UI development</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                        <div class="skill-item" data-skill="git">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">Git</span>
+                                <span class="skill-stars">★★★☆☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                            <div class="skill-description">Version control and collaborative development</div>
+                        </div>
+
+                        <div class="skill-item" data-skill="html-css">
+                            <div class="skill-header">
+                                <span class="skill-icon">▪</span>
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-stars">★★★★☆</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <div class="skill-description">Web markup and styling fundamentals</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="command-section">
+                    <div class="command-line">
+                        <span class="prompt">moeed@portfolio:~$</span>
+                        <span class="command">assessment_complete</span>
+                    </div>
+                    <div class="output-line">Skills assessment completed successfully ✓</div>
+                    <div class="output-line">Ready for new challenges and learning opportunities</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="about.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> About Me</a>
+            <a href="projects.html" class="nav-btn next">View Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

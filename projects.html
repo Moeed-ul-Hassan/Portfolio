@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Moeed ul Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Code Background Watermark -->
+    <div class="code-bg">
+        <pre>
+# Project Archive System
+class ProjectManager:
+    def __init__(self):
+        self.completed_missions = []
+        self.abandoned_missions = []
+        
+    def add_completed_project(self, name, tech_stack, description):
+        project = {
+            'name': name,
+            'technologies': tech_stack,
+            'description': description,
+            'status': 'COMPLETED',
+            'impact': 'Positive'
+        }
+        self.completed_missions.append(project)
+        
+    def archive_project(self, name, reason):
+        project = {
+            'name': name,
+            'status': 'ARCHIVED',
+            'reason': reason,
+            'lessons_learned': 'Experience gained'
+        }
+        self.abandoned_missions.append(project)
+        
+portfolio = ProjectManager()
+        </pre>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>MH.dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="projects.html" class="active"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1><i class="fas fa-rocket"></i> Mission Archive</h1>
+            <p>Digital portfolio of completed and archived projects</p>
+        </div>
+
+        <!-- Completed Missions -->
+        <section class="missions-section">
+            <h2 class="section-title">
+                <i class="fas fa-check-circle"></i>
+                Completed Missions
+                <span class="mission-count">3</span>
+            </h2>
+            
+            <div class="projects-grid">
+                <div class="project-card completed" data-project="mail-hawk">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">COMPLETED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mail Hawk</h3>
+                        <p>Email management system with advanced filtering and organization capabilities</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-metrics">
+                            <span><i class="fas fa-code"></i> 2.5k lines</span>
+                            <span><i class="fas fa-calendar"></i> 3 months</span>
+                        </div>
+                        <button class="details-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card completed" data-project="food-rescue">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">COMPLETED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Food Rescue Network</h3>
+                        <p>Social impact application connecting food donors with those in need</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-metrics">
+                            <span><i class="fas fa-code"></i> 3.2k lines</span>
+                            <span><i class="fas fa-calendar"></i> 4 months</span>
+                        </div>
+                        <button class="details-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card completed" data-project="addictions-blocker">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">COMPLETED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Addictions Blocker</h3>
+                        <p>Productivity tool to help users overcome digital addictions and distractions</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-metrics">
+                            <span><i class="fas fa-code"></i> 1.8k lines</span>
+                            <span><i class="fas fa-calendar"></i> 2 months</span>
+                        </div>
+                        <button class="details-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abandoned Missions -->
+        <section class="missions-section">
+            <h2 class="section-title">
+                <i class="fas fa-archive"></i>
+                Archived Missions
+                <span class="mission-count">4</span>
+            </h2>
+            
+            <div class="projects-grid">
+                <div class="project-card abandoned" data-project="task-buddy">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge abandoned">ARCHIVED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Task Buddy</h3>
+                        <p>AI-powered task management system with smart scheduling</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">OpenAI API</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="archive-reason">
+                            <span><i class="fas fa-info-circle"></i> Scope too large for solo development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card abandoned" data-project="freelance-shield">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge abandoned">ARCHIVED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Freelance Shield</h3>
+                        <p>Freelancer protection platform with contract management</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="archive-reason">
+                            <span><i class="fas fa-info-circle"></i> Required legal expertise beyond scope</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card abandoned" data-project="talking-mask">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge abandoned">ARCHIVED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Talking Mask</h3>
+                        <p>Voice communication device for masked environments</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Speech API</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="archive-reason">
+                            <span><i class="fas fa-info-circle"></i> Hardware complexity beyond current skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card abandoned" data-project="price-genie">
+                    <div class="card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge abandoned">ARCHIVED</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>PriceGenie</h3>
+                        <p>AI-powered price comparison and tracking platform</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Web Scraping</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="archive-reason">
+                            <span><i class="fas fa-info-circle"></i> Anti-scraping measures too advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="skills.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> View Skills</a>
+            <a href="contact.html" class="nav-btn next">Contact Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Project Details</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

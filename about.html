@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Moeed ul Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Code Background Watermark -->
+    <div class="code-bg">
+        <pre>
+# Mission Briefing: Developer Profile
+class MoeedulHassan:
+    def __init__(self):
+        self.name = "Moeed ul Hassan"
+        self.location = "Gujrat, Pakistan"
+        self.status = "Self-taught Developer"
+        self.experience = "1 year freelancing"
+        self.values = ["Truth", "Halal effort", "Self-discipline"]
+        
+    def mission_statement(self):
+        return """
+        Dedicated to building meaningful applications
+        that solve real-world problems while
+        maintaining Islamic values and principles.
+        """
+        
+    def projects_completed(self):
+        return [
+            "Mail Hawk - Email Management System",
+            "Food Rescue Network - Social Impact App", 
+            "Addictions Blocker - Productivity Tool"
+        ]
+        </pre>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>MH.dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="projects.html"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1><i class="fas fa-user-astronaut"></i> Mission Briefing</h1>
+            <p>Developer profile and background intel</p>
+        </div>
+
+        <div class="briefing-panel">
+            <div class="panel-header">
+                <span class="panel-title">CLASSIFIED: DEVELOPER_PROFILE.md</span>
+                <span class="security-level">CLEARANCE: PUBLIC</span>
+            </div>
+            
+            <div class="panel-content">
+                <div class="bio-section">
+                    <h2><i class="fas fa-id-card"></i> Personal Intel</h2>
+                    <div class="bio-content">
+                        <p>I'm <strong>Moeed</strong>, a self-taught developer with 1 year of freelancing experience. While I haven't completed commercial projects yet, I've built meaningful applications like <strong>Mail Hawk</strong> and <strong>Food Rescue Network</strong>, and I'm now fully focused on my job search.</p>
+                        
+                        <p>My journey into development began with a passion for solving real-world problems through technology. I believe in creating applications that not only function well but also serve a meaningful purpose in people's lives.</p>
+                        
+                        <p>My work is guided by Islamic values: <em>truth</em>, <em>halal effort</em>, and <em>self-discipline</em>. These principles shape not only how I code but how I approach every project and interaction.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h2><i class="fas fa-timeline"></i> Mission Timeline</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>2023 - Present</h3>
+                                <h4>Self-Taught Development Journey</h4>
+                                <p>Started learning Python, web development, and building personal projects</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>2024</h3>
+                                <h4>Freelancing Experience</h4>
+                                <p>Gained 1 year of freelancing experience, building various applications and tools</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>2024 - Present</h3>
+                                <h4>Active Job Search</h4>
+                                <p>Focused on finding full-time opportunities to grow and contribute to meaningful projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h2><i class="fas fa-heart"></i> Core Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Truth</h3>
+                            <p>Honest communication and transparent development practices</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Halal Effort</h3>
+                            <p>Ethical work practices and contributing to meaningful projects</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-medal"></i>
+                            <h3>Self-Discipline</h3>
+                            <p>Continuous learning and commitment to excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <a href="skills.html" class="nav-btn next">View Skills <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

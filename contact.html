@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Moeed ul Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Code Background Watermark -->
+    <div class="code-bg">
+        <pre>
+# Communication Protocol
+class ContactForm:
+    def __init__(self):
+        self.sender = None
+        self.message = None
+        self.status = "ready_to_transmit"
+        
+    def validate_transmission(self, name, email, message):
+        if not name or not email or not message:
+            return False, "Missing required fields"
+        if "@" not in email:
+            return False, "Invalid email format"
+        return True, "Transmission ready"
+        
+    def send_message(self, data):
+        print("Establishing connection...")
+        print("Encrypting message...")
+        print("Transmission successful ✓")
+        return {"status": "delivered", "timestamp": "now"}
+
+# "Indeed, Allah is with those who do good." 
+# - Surah Ankaboot 29:69
+        </pre>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>MH.dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="projects.html"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1><i class="fas fa-satellite-dish"></i> Communication Terminal</h1>
+            <p>Establish secure connection and transmit message</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="terminal-form">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn red"></span>
+                        <span class="btn yellow"></span>
+                        <span class="btn green"></span>
+                    </div>
+                    <div class="terminal-title">message_composer.sh</div>
+                </div>
+                
+                <div class="terminal-body">
+                    <div class="command-section">
+                        <div class="command-line">
+                            <span class="prompt">visitor@portfolio:~$</span>
+                            <span class="command">send_message --to=Moeed</span>
+                        </div>
+                        <div class="output-line">Initializing secure communication channel...</div>
+                        <div class="output-line">Ready for message transmission ✓</div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="prompt">sender@identity:~$</span>
+                                <span class="field-label">name</span>
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="prompt">sender@contact:~$</span>
+                                <span class="field-label">email</span>
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <span class="prompt">message@subject:~$</span>
+                                <span class="field-label">subject</span>
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Brief message subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="prompt">message@content:~$</span>
+                                <span class="field-label">message</span>
+                            </label>
+                            <textarea id="message" name="message" required placeholder="Type your message here..." rows="6"></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-rocket"></i>
+                                <span>Launch Transmission 🚀</span>
+                            </button>
+                            <button type="reset" class="reset-btn">
+                                <i class="fas fa-undo"></i>
+                                <span>Clear Buffer</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="transmission-status" class="transmission-status hidden">
+                        <div class="status-line">
+                            <span class="prompt">system@status:~$</span>
+                            <span class="status-text">Message transmitted successfully ✓</span>
+                        </div>
+                        <div class="status-line">
+                            <span class="prompt">system@response:~$</span>
+                            <span class="status-text">Awaiting response from Moeed...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3><i class="fas fa-address-book"></i> Alternative Channels</h3>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Email</span>
+                            <span class="method-value">moeed@portfolio.dev</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">LinkedIn</span>
+                            <span class="method-value">linkedin.com/in/moeedhassan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">GitHub</span>
+                            <span class="method-value">github.com/moeedhassan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Location</span>
+                            <span class="method-value">Gujrat, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="availability-status">
+                    <h4><i class="fas fa-clock"></i> Current Status</h4>
+                    <div class="status-indicator">
+                        <span class="status-dot online"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <div class="response-time">
+                        <i class="fas fa-reply"></i>
+                        <span>Typical response: 24 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Islamic Footer -->
+        <div class="islamic-footer">
+            <div class="verse-container">
+                <i class="fas fa-quote-left"></i>
+                <span class="arabic-text">إِنَّ اللَّهَ مَعَ الَّذِينَ أَحْسَنُوا</span>
+                <span class="translation">"Indeed, Allah is with those who do good."</span>
+                <span class="reference">— Surah Ankaboot 29:69</span>
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="projects.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> View Projects</a>
+            <a href="index.html" class="nav-btn next">Back to Home <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

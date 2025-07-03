@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeed ul Hassan - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Code Background Watermark -->
+    <div class="code-bg">
+        <pre>
+def developer():
+    skills = ['Python', 'FastAPI', 'JavaScript']
+    passion = 'Building meaningful applications'
+    location = 'Gujrat, Pakistan'
+    return {
+        'name': 'Moeed ul Hassan',
+        'status': 'Available for hire',
+        'mission': 'Creating innovative solutions'
+    }
+
+class Portfolio:
+    def __init__(self):
+        self.projects = []
+        self.experience = '1 year freelancing'
+        
+    def add_project(self, name, tech_stack):
+        self.projects.append({
+            'name': name,
+            'technologies': tech_stack,
+            'status': 'completed'
+        })
+        </pre>
+    </div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal"></i>
+            <span>MH.dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="projects.html"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn red"></span>
+                        <span class="btn yellow"></span>
+                        <span class="btn green"></span>
+                    </div>
+                    <div class="terminal-title">portfolio.sh</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="command-line">
+                        <span class="prompt">visitor@portfolio:~$</span>
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="output">
+                        <h1 class="typing-text" data-text="Hi, I'm Moeed ul Hassan"></h1>
+                        <h2 class="typing-text" data-text="Python Web App Developer | Based in Gujrat, Pakistan" data-delay="2000"></h2>
+                        <div class="hero-description">
+                            <p class="typing-text" data-text="Self-taught developer passionate about creating meaningful applications" data-delay="4000"></p>
+                            <p class="typing-text" data-text="Ready to bring your ideas to life with clean, efficient code" data-delay="6000"></p>
+                        </div>
+                    </div>
+                    <div class="command-line" style="margin-top: 2rem;">
+                        <span class="prompt">visitor@portfolio:~$</span>
+                        <span class="command typing-text" data-text="./explore_world.sh" data-delay="8000"></span>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <a href="about.html" class="cta-button">
+                    <span>Explore My World</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number">1+</div>
+                <div class="stat-label">Year Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Dedication</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scanlines Effect -->
+    <div class="scanlines"></div>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
