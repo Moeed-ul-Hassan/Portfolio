@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeed ul Hassan | Junior Go Developer & Backend Engineer</title>
+    <meta name="description"
+        content="Moeed ul Hassan - Junior Go (Golang) Developer from Pakistan. Recently finished Go course and actively practicing backend development, CLI tools, and REST APIs.">
+    <meta name="keywords"
+        content="Moeed ul Hassan, Junior Go Developer, Golang, Backend Engineer, CLI Banking, Pakistan Developer, REST API, Gin Framework">
+    <meta name="author" content="Moeed ul Hassan">
+    <link rel="canonical" href="https://www.moedulhassan.xyz/">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="ADD_YOUR_VERIFICATION_CODE_HERE" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.moedulhassan.xyz/">
+    <meta property="og:title" content="Moeed ul Hassan | Junior Go Developer">
+    <meta property="og:description"
+        content="Junior Go Developer specializing in backend systems and CLI tools. Check out my practice projects.">
+    <meta property="og:image" content="https://www.moedulhassan.xyz/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.moedulhassan.xyz/">
+    <meta property="twitter:title" content="Moeed ul Hassan | Junior Go Developer">
+    <meta property="twitter:description" content="Junior Go Developer specializing in backend systems and CLI tools.">
+    <meta property="twitter:image" content="https://www.moedulhassan.xyz/assets/og-image.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moeed ul Hassan",
+      "url": "https://www.moedulhassan.xyz/",
+      "jobTitle": "Junior Go Developer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Pakistan"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/User:Moeed_ul_hassan_pk",
+        "https://www.wikidata.org/wiki/Q137759719",
+        "https://github.com/Moeed-ul-Hassan",
+        "https://linkedin.com/in/moeed-ul-hassan-pk",
+        "https://twitter.com/moeedulhassanpk"
+      ],
+      "knowsAbout": ["Go", "Golang", "Backend Development", "REST APIs", "PostgreSQL", "CLI Tools"]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <!-- Animated Gopher -->
+            <div class="gopher-container">
+                <img src="https://go.dev/blog/gopher/gopher.png" alt="Go Gopher" class="gopher-loading">
+                <div class="gopher-shadow"></div>
+
+                <!-- Coffee cup for Gopher -->
+                <div class="coffee-cup">
+                    <div class="coffee-steam">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    ☕
+                </div>
+            </div>
+
+            <!-- Loading Text -->
+            <div class="loading-text-container">
+                <h2 class="loading-title">Loading Portfolio</h2>
+                <p class="loading-subtitle" id="loadingText">Initializing Go environment...</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill" id="progressBar"></div>
+                </div>
+                <span class="progress-text" id="progressText">0%</span>
+            </div>
+
+            <!-- Code Snippet Animation -->
+            <div class="code-snippet">
+                <div class="code-line">
+                    <span class="code-keyword">package</span> <span class="code-var">main</span>
+                </div>
+                <div class="code-line">
+                    <span class="code-keyword">func</span> <span class="code-function">LoadPortfolio</span><span
+                        class="code-bracket">()</span> <span class="code-bracket">{</span>
+                </div>
+                <div class="code-line code-indent">
+                    <span class="code-comment">// Getting everything ready...</span>
+                </div>
+                <div class="code-line">
+                    <span class="code-bracket">}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">MOEED<span>.</span></div>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-top">
+                    <div class="profile-mini">
+                        <img src="assets/avatar.png" alt="Moeed ul Hassan">
+                    </div>
+                    <div class="badge">Go Course Completed</div>
+                </div>
+                <h1>Moeed ul Hassan</h1>
+                <h2 class="glitch-text">Junior Go Developer</h2>
+                <p>I've recently completed a comprehensive Go (Golang) certification and am now actively building
+                    backend solutions. I focus on writing idiomatic Go and solving real-world problems through code.</p>
+                <div class="hero-btns">
+                    <div class="btns-group">
+                        <div class="btn-with-gopher">
+                            <a href="#projects" class="btn">See My Practice</a>
+                            <div class="gopher-interactive">
+                                <img src="https://go.dev/blog/gopher/gopher.png" alt="Go Gopher" class="gopher-body">
+                                <div class="gopher-eyes">
+                                    <div class="eye-lid left"></div>
+                                    <div class="eye-lid right"></div>
+                                </div>
+                                <div class="gopher-zzz">
+                                    <span>z</span><span>z</span><span>z</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-terminal">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">moeed@practice: ~</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-content">
+                        <div class="line"><span class="prompt">moeed@practice:~$</span> <span class="command">cat
+                                status.txt</span></div>
+                        <div class="line output">Go Course: 100% Completed</div>
+                        <div class="line output">Current Focus: Building Portfolio Projects</div>
+                        <div class="line"><span class="prompt">moeed@practice:~$</span> <span class="command">ls
+                                practice/</span></div>
+                        <div class="line output">banking_cli/ api_service/ concurrency_patterns/</div>
+                        <div class="line"><span class="prompt">moeed@practice:~$</span> <span class="command">go test
+                                ./...</span></div>
+                        <div class="line output status">Running practice tests... [PASS]</div>
+                        <div class="line output status">Ready for junior-level challenges.</div>
+                        <div class="line"><span class="prompt">moeed@practice:~$</span> <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://go.dev/blog/gopher/gopher.png" alt="Go Gopher" class="gopher-mascot">
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="performance-section">
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Development Philosophy</h3>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="label">Learning Consistency</span>
+                            <span class="value">Daily</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Code Cleanliness</span>
+                            <span class="value">High Priority</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Problem Solving</span>
+                            <span class="value">Active</span>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-text">
+                    <h2 class="section-title">Dedicated to <span>Growth</span></h2>
+                    <p>Having finished my formal Go training, I am now in the "active practice" phase. I spend my days
+                        building, breaking, and fixing backend systems to ensure my knowledge is practical and
+                        production-ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/avatar.png" alt="Moeed ul Hassan">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a dedicated learner with a passion for backend development. I recently completed a
+                            deep-dive
+                            Go course and am now fully committed to mastering the language through hands-on practice.
+                        </p>
+                        <p>Based in Pakistan, I am currently building personal projects to sharpen my skills and prepare
+                            for
+                            my first professional role in the tech industry.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>Go</h3>
+                            <p>Course Finished</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Backend</h3>
+                            <p>Core Interest</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>CLI</h3>
+                            <p>Practice Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Stack</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-golang"></i></div>
+                    <h3>Go (Golang)</h3>
+                    <p>Basics, Pointers, Structs, Interfaces, Methods, Concurrency.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <p>RESTful APIs, Gin Framework, Middleware, JWT.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MySQL, SQL Fundamentals, GORM.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <h3>CLI Tools</h3>
+                    <p>Building interactive command-line apps with Cobra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional <span>Experience</span></h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2064&auto=format&fit=crop"
+                            alt="Ecommerce API">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="badge">Latest Project</div>
+                        <h3>Ecommerce API</h3>
+                        <p>A robust backend solution for modern e-commerce platforms. Features include product catalog
+                            management, secure checkout flows, and user authentication using Go and PostgreSQL.</p>
+                        <div class="tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Practice <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/banking-cli.png" alt="CLI Banking System">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CLI Banking System</h3>
+                        <p>A command-line application built to practice Go fundamentals, featuring user accounts and
+                            basic transaction logic.</p>
+                        <div class="tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">CLI</span>
+                            <span class="tag">Practice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/banking-api.png" alt="Banking API">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Banking API Service</h3>
+                        <p>A RESTful API project exploring the Gin framework and database integration for banking
+                            operations.</p>
+                        <div class="tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">Gin</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Writing</span></h2>
+            <div class="blog-grid">
+                <div class="project-card reveal">
+                    <div class="project-info">
+                        <div class="post-meta"
+                            style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+                            <span class="date">Feb 1, 2026</span>
+                        </div>
+                        <h3>Professional Guide to Effective AI Assisted Coding</h3>
+                        <p>Master AI-assisted development. Control architecture, verify output, and maintain integrity
+                            while you learn code with AI.</p>
+                        <a href="posts/ai-assisted-coding.html" class="btn btn-outline"
+                            style="padding: 0.8rem 1.5rem; margin-top: 1rem;">Read More</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-info">
+                        <div class="post-meta"
+                            style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+                            <span class="date">Feb 1, 2026</span>
+                        </div>
+                        <h3>The Architect's Approach</h3>
+                        <p>Deep dive into system design principles and building scalable architectures in Go. Thinking
+                            like a designer, not just a coder.</p>
+                        <a href="posts/architect-approach.html" class="btn btn-outline"
+                            style="padding: 0.8rem 1.5rem; margin-top: 1rem;">Read More</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-info">
+                        <div class="post-meta"
+                            style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+                            <span class="date">Jan 30, 2026</span>
+                        </div>
+                        <h3>Digital Noise vs Productivity</h3>
+                        <p>Strategies for maintaining extreme focus in a world of constant digital interruptions. How to
+                            create a deep work environment.</p>
+                        <a href="posts/digital-noise-productivity.html" class="btn btn-outline"
+                            style="padding: 0.8rem 1.5rem; margin-top: 1rem;">Read More</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-info">
+                        <div class="post-meta"
+                            style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+                            <span class="date">Jan 28, 2026</span>
+                        </div>
+                        <h3>Peak Hour Stability</h3>
+                        <p>Ensuring your Go services remain stable and performant during unexpected traffic surges.
+                            Patterns for high-availability.</p>
+                        <a href="posts/peak-hour-stability.html" class="btn btn-outline"
+                            style="padding: 0.8rem 1.5rem; margin-top: 1rem;">Read More</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-info">
+                        <div class="post-meta"
+                            style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.85rem;">
+                            <span class="date">Jan 25, 2026</span>
+                        </div>
+                        <h3>Solving Digital Pain Points</h3>
+                        <p>Identifying common bottlenecks in modern development workflows and crafting Go-based
+                            solutions to automate them.</p>
+                        <a href="posts/solving-digital-pain-points.html" class="btn btn-outline"
+                            style="padding: 0.8rem 1.5rem; margin-top: 1rem;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <h3>Get in touch</h3>
+                    <p>I'm looking for my first opportunity to contribute to a team and grow as a developer. Let's talk!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:hello@moeed.dev"><i class="fa-solid fa-envelope"></i> hello@moeed.dev</a>
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> Pakistan</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Moeed-ul-Hassan" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/moeed-ul-hassan-pk" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/moeedulhassanpk" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.wikidata.org/wiki/User:Moeed_ul_hassan_pk" target="_blank"
+                            rel="noopener noreferrer" title="Wikidata"><i class="fa-solid fa-database"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Moeed ul Hassan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
